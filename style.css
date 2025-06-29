@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  padding: 1rem;
+  background-color: #fdfbf5;
+}
+
+main {
+  width: 100%;
+  padding: 1rem;
+  padding-top: 3rem;
+  border: 1px solid black;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin: 1rem 0;
+}
+
+.view-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.view-1 p {
+  font-weight: 200;
+  opacity: 0.8;
+}
+.view-1 h1 {
+  font-weight: 500;
+  font-size: 3.8rem;
+  width: 70%;
+  line-height: 1;
+}
+.view-1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.view-2 {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 .top p {
+  font-weight: 200;
+  opacity: 0.8;
+}
+.view-2 .top h1 {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+  width: 90%;
+}
+.view-2 .top button {
+  padding: 1rem;
+  border: 0.7rem;
+  border-radius: 0.5rem;
+  background-color: black;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgb(255, 248, 214);
+}
+.view-2 .line {
+  background-color: #000;
+  height: 0.5px;
+}
+.view-2 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 .bottom .elem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-2 .bottom .elem img {
+  width: 4rem;
+  aspect-ratio: 1/1;
+}
+.view-2 .bottom .elem h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.view-2 .bottom .elem p {
+  font-weight: 200;
+  opacity: 0.8;
+  line-height: 1.5rem;
+}
+
+.view-3 {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-3 .line {
+  background-color: #000;
+  height: 0.5px;
+}
+.view-3 .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.view-3 .left .team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.view-3 .left .team h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.view-3 .left .team p {
+  font-size: 1.4rem;
+  opacity: 0.8;
+  line-height: 2rem;
+}
+.view-3 .right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.view-3 .right .col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.view-3 .right .col .card {
+  width: 100%;
+}
+.view-3 .right .col .card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+  height: 17rem;
+}
+.view-3 .right .col .card h1 {
+  padding-top: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.view-3 .right .col .card p {
+  padding-bottom: 2rem;
+  font-weight: 200;
+  opacity: 0.8;
+}
+
+.view-4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.view-4 .first {
+  width: 100%;
+}
+.view-4 .first .text {
+  margin-top: 1.5rem;
+}
+.view-4 .first .text p {
+  font-weight: 200;
+  opacity: 0.8;
+}
+.view-4 .first .text h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.view-4 .first img {
+  width: 4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
+}
+.view-4 .line {
+  display: none;
+}
+.view-4 .second {
+  display: flex;
+  flex-direction: column;
+}
+.view-4 .second p {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+.view-4 .second button {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  background-color: black;
+  border: 0.7rem;
+  border-radius: 0.5rem;
+  color: rgb(255, 248, 214);
+}
+
+@media (min-width: 1020px) {
+  main {
+    padding: 3rem;
+  }
+  .view-1 h1 {
+    font-size: 6rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .view-2 {
+    margin-top: 5rem;
+    flex-direction: row;
+  }
+  .view-2 .top {
+    width: 60%;
+    justify-content: space-between;
+  }
+  .view-2 .top h1 {
+    font-size: 5rem;
+  }
+  .view-2 .line {
+    height: initial;
+    width: 1px;
+  }
+  .view-2 .bottom {
+    width: 40%;
+  }
+  .view-2 .bottom .line {
+    height: 1px;
+    width: 100%;
+    align-self: stretch;
+  }
+  .view-3 {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .view-3 .left {
+    width: 30%;
+  }
+  .view-3 .left .team {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
+  .view-3 .left .team h1 {
+    font-size: 4rem;
+  }
+  .view-3 .left .team p {
+    font-size: 1.3rem;
+  }
+  .view-3 .right {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .view-3 .line {
+    height: initial;
+    width: 1px;
+  }
+  .view-4 {
+    height: 35rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .view-4 .first {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .view-4 .first .text h1 {
+    font-size: 6rem;
+    line-height: 6.5rem;
+    font-weight: 350;
+  }
+  .view-4 .line {
+    display: block;
+    height: initial;
+    width: 1px;
+  }
+  .view-4 .second {
+    width: 30%;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .view-4 .second p {
+    font-size: rem;
+  }
+}/*# sourceMappingURL=style.css.map */
